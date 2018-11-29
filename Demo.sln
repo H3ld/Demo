@@ -3,13 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{71C95CD0-304F-41DC-AC89-00182D4E183F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Domain.Tests", "Demo.Domain.Tests\Demo.Domain.Tests.csproj", "{2AE3E000-392F-4930-86C9-52D8D306DAB5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D98E358F-45C8-40B4-8C75-0878E57982B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Domain", "Demo.Domain\Demo.Domain.csproj", "{DD9D643F-B336-4330-A81E-F05C62E6B635}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Domain.Tests", "Demo.Domain.Tests\Demo.Domain.Tests.csproj", "{2AE3E000-392F-4930-86C9-52D8D306DAB5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Infrastructure", "Demo.Infrastructure\Demo.Infrastructure.csproj", "{C557CF38-D7E5-4229-875E-90C33873E89C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Domain", "Demo.Domain\Demo.Domain.csproj", "{DD9D643F-B336-4330-A81E-F05C62E6B635}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.Application", "Demo.Application\Demo.Application.csproj", "{F0B6173B-9D57-4855-BBAA-55ABFB97BB28}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.UseCases.Tests", "Demo.UseCases.Tests\Demo.UseCases.Tests.csproj", "{A742A960-478E-4041-99D7-98A14400FFC6}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{B6713092-6E18-4C05-9767-26DC885DEE1A}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Demo.WebApp", "Demo.WebApp\Demo.WebApp.csproj", "{788CD6B9-4583-4843-8058-ED3EB9FB3AC6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -25,13 +31,29 @@ Global
 		{DD9D643F-B336-4330-A81E-F05C62E6B635}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DD9D643F-B336-4330-A81E-F05C62E6B635}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DD9D643F-B336-4330-A81E-F05C62E6B635}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C557CF38-D7E5-4229-875E-90C33873E89C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C557CF38-D7E5-4229-875E-90C33873E89C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C557CF38-D7E5-4229-875E-90C33873E89C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C557CF38-D7E5-4229-875E-90C33873E89C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0B6173B-9D57-4855-BBAA-55ABFB97BB28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0B6173B-9D57-4855-BBAA-55ABFB97BB28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0B6173B-9D57-4855-BBAA-55ABFB97BB28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0B6173B-9D57-4855-BBAA-55ABFB97BB28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A742A960-478E-4041-99D7-98A14400FFC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A742A960-478E-4041-99D7-98A14400FFC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A742A960-478E-4041-99D7-98A14400FFC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A742A960-478E-4041-99D7-98A14400FFC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{788CD6B9-4583-4843-8058-ED3EB9FB3AC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{788CD6B9-4583-4843-8058-ED3EB9FB3AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{788CD6B9-4583-4843-8058-ED3EB9FB3AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{788CD6B9-4583-4843-8058-ED3EB9FB3AC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{2AE3E000-392F-4930-86C9-52D8D306DAB5} = {D98E358F-45C8-40B4-8C75-0878E57982B5}
-		{DD9D643F-B336-4330-A81E-F05C62E6B635} = {71C95CD0-304F-41DC-AC89-00182D4E183F}
+		{2AE3E000-392F-4930-86C9-52D8D306DAB5} = {B6713092-6E18-4C05-9767-26DC885DEE1A}
+		{A742A960-478E-4041-99D7-98A14400FFC6} = {B6713092-6E18-4C05-9767-26DC885DEE1A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E5BCF06-E7C2-44F2-A5AD-24138F8D7768}

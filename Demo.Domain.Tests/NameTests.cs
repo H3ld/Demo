@@ -15,9 +15,9 @@ namespace Demo.Domain.Tests
 
 			// Assert
 			Assert.Throws<NameShouldNotBeEmptyException>(
-				() => new Name(empty));
+				() => new Password(empty));
 			Assert.Throws<NameShouldNotBeEmptyException>(
-				() => new Name(whitespace));
+				() => new Password(whitespace));
 		}
 
 		[Fact]
@@ -27,7 +27,7 @@ namespace Demo.Domain.Tests
 			string valid = "Reply Accessor on talent.io";
 
 			// Act
-			Name output = new Name(valid);
+			Password output = new Password(valid);
 
 			// Assert
 			Assert.Equal(valid, (string)output);
@@ -39,10 +39,10 @@ namespace Demo.Domain.Tests
 		{
 			// Arrange
 			string text = "Hallo Frau Grünbaum";
-			Name valid = new Name(text);
+			Password valid = new Password(text);
 			
 			// Act
-			var output = (Name)text;
+			var output = (Password)text;
 
 			// Assert
 			Assert.Equal(valid, output);

@@ -1,0 +1,18 @@
+{
+  "defaultAssembly": "Demo.Infrastructure",
+  "modules": [
+    {
+      "type": "Demo.WebApp.Module, Demo.WebApp",
+      "properties": {
+      }
+    },
+    {
+      "type": "Demo.Infrastructure.ApplicationModule",
+      "properties": {
+      }
+    },
+    {
+      "type": "Demo.Infrastructure.InMemoryDataAccess.Module"
+    }
+  ]
+}

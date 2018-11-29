@@ -7,5 +7,6 @@ namespace Demo.Domain.ValueObjects
 {
 	public class TodoCollection : ItemCollection<Todo>
 	{
+		public override bool REMOVES_DOUBLES { get => true; }
 	}
 }

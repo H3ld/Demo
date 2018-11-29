@@ -1,0 +1,21 @@
+{
+  "defaultAssembly": "Demo.Infrastructure",
+  "modules": [
+    {
+      "type": "Demo.MvcApp.Module, Demo.MvcApp",
+      "properties": {
+      }
+    },
+    {
+      "type": "Demo.Infrastructure.ApplicationModule",
+      "properties": {
+      }
+    },
+    {
+      "type": "Demo.Infrastructure.EntityFrameworkDataAccess.Module",
+      "properties": {
+        "ConnectionString": "Server=(LocalDB)\\MSSQLLocalDB;Database=MangaDb;Integrated Security=true;"
+      }
+    }
+  ]
+}

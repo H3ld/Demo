@@ -1,7 +1,7 @@
-﻿using Demo.Domain.ValueObjects;
+﻿using Demo.Domain.Tasks;
+using Demo.Domain.ValueObjects;
 using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace Demo.Domain.Users
 {
@@ -11,13 +11,22 @@ namespace Demo.Domain.Users
 
 		public Name Name { get; private set; }
 
-		public TodoCollection AssociatedTasks { get; private set; }
+		public Password Password { get; private set; }
 
-		public User(Name name)
+		public TodoCollection AssignedTodo { get; private set; }
+
+		public User(Name name, Password password)
 		{
 			Id = Guid.NewGuid();
 			Name = name;
-			AssociatedTasks = new TodoCollection();
+			Password = password;
+			AssignedTodo = new TodoCollection();
 		}
+
+		public IReadOnlyCollection<Todo> GetAssociatedTasks() => AssignedTodo.GetReadOnly();
+
+		public void AssignTodo(Todo todo) => AssignedTodo.Add(todo);
+
+		public void RemoveTodo(Todo todo) => AssignedTodo.Remove(todo);
 	}
 }
